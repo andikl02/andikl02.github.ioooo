@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Perfil</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mi Perfil</h1>
+  </header>
+
+  <main>
+    <div class="perfil">
+      <div class="foto-container">
+        <img src="imagem/foto04.jpg" alt="Minha Foto">
+      </div>
+      <div class="descricao-container">
+        <h2 id="nome">Andrieli Klegin</h2>
+        <div class="descricao" id="descricao">
+          <p>19 años</p>
+          <p>Katueté</p>
+          <p>Paraguay</p>
+          <button id="mostrar-bio">Bio</button>
+        </div>
+      </div>
+      <div class="redes-sociais">
+        <a href="https://instagram.com/andikl__?igshid=MmIzYWVlNDQ5Yg==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/Andriklegin?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.tiktok.com/@andikl_" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </main>
+  <nav>
+  </nav>
+
+  <footer>
+    <p>✨ andrieliklegin5@gmail.com ✨</p>
+  </footer>
+
+  <script>
+    const descricaoElemento = document.querySelector(".descricao");
+    const botaoMostrarBio = document.getElementById("mostrar-bio");
+
+    botaoMostrarBio.addEventListener("click", () => {
+      descricaoElemento.classList.toggle("expandir");
+      botaoMostrarBio.textContent = descricaoElemento.classList.contains("expandir") ? "<3" : "Mostrar Biografia";
+      
+      if (descricaoElemento.classList.contains("expandir")) {
+        // Redirecionar para a página "otrapg.html" quando a bio estiver expandida
+        window.location.href = "otrapg.html";
+      }
+    }); 
+  </script>
+</body>
+</html>

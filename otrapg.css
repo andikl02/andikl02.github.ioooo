@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("https://i.pinimg.com/originals/91/d8/2d/91d82dc95f08060e490a5ca7bc40c378.gif");
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  color: #A020F0; /* Cor do texto branco */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  background-color: #ff8ba7;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #BA55D3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.descricao-container h2 {
+  font-size: 2.5rem;
+  color: #FF1493;
+  transition: transform 0.5s, text-shadow 0.5s;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #ff8ba7; /* Cor de fundo rosa claro para o rodapé */
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.parallax {
+  background-image: url("https://i.pinimg.com/originals/91/d8/2d/91d82dc95f08060e490a5ca7bc40c378.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.perfil {
+  padding: 20px;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+  box-shadow: 0 0 10px #ff69b4(0, 0, 0, 0.2);
+}
+
+.descricao {
+  display: none;
+}
+
+.mostrar-bio {
+  background-color: #FF69B4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.mostrar-bio:hover {
+  background-color: #ff007f;
+}
+
+/* Animação para mostrar a descrição quando o botão for clicado */
+.descricao.mostrar {
+  display: block;
+  animation: fadeIn 1s forwards;
+}
+
+#mostrar-bio {
+  background-color: #FF69B4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#mostrar-bio:hover {
+  background-color: #ff007f; /* Cor diferente ao passar o mouse */
+}
+
+
+.descricao-container h2 {
+  font-size: 2.5rem;
+  color: #FF1493; /* Cor do texto rosa escuro */
+  transition: transform 0.5s, text-shadow 0.5s;
+  cursor: pointer;
+}
+
+..descricao {
+  /* ... (estilos anteriores) ... */
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.descricao.expandir {
+  max-height: 1000px; /* Valor suficientemente grande para exibir toda a descrição */
+}
+
+footer p {
+  color: #fff; /* Cor do texto branco no rodapé */
+}
+
+body {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
